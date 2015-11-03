@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="container1">
+    <h1>Contacts List</h1>
+    <label for="nameField" class="col-xs-3 col-md-3 col-lg-3">Name:</label>
+    <input type="text" id="nameField" class="col-xs-9 col-md-9 col-lg-9">
+    <label for="emailField" class="col-xs-3 col-md-3 col-lg-3">Email:</label>
+    <input type="email" id="emailField" class="col-xs-9 col-md-9 col-lg-9">
+    <label for="phoneField" class="col-xs-3 col-md-3 col-lg-3">Phone Number:</label>
+    <input type="number" id="phoneField" class="col-xs-9 col-md-9 col-lg-9">
+    <label for="twitterField" class="col-xs-3 col-md-3 col-lg-3">Twitter Handle:</label>
+    <input type="text" id="twitterField" class="col-xs-9 col-md-9 col-lg-9" value="@">
+    <button class="btn btn-default col-xs-12" id='add'>Add / Update</button>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class='col-xs-3'>Name</th>
+          <th class='col-xs-3'>Email</th>
+          <th class='col-xs-2'>Phone Number</th>
+          <th class='col-xs-2'>Twitter Handle</th>
+          <th class='col-xs-1'></th>
+          <th class='col-xs-1'></th>
+        </tr>
+      </thead>
+      <tbody id='list'></tbody>
+      <tr id='sample'>
+        <td class='name'></td>
+        <td class='email'></td>
+        <td class='phoneNumber'></td>
+        <td class='twitter'></td>
+        <td><a class='edit' href="#"><i class="fa fa-pencil"></i></a></td>
+        <td><a class='remove' href="#"><i class='fa fa-trash'></i></a></td>
+      </tr>
+    </table>
+  </div>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
